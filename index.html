@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/2fd3d964b0.js" crossorigin="anonymous"></script>
+</head><body>
+	<!-- NAVBAR -->
+	<div class="first">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<i class="fab fa-instagram d-inline-block align-top" style="font-size:30px"></i>
+			<a class="navbar-brand" href="#"> <b> Instagram </b> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav nav-link rounded-sm border bg-success border-succes text-white" href="#">
+                        <!-- Button trigger modal -->
+                            <button type="button" class="border-0 border bg-success border-succes text-white" data-toggle="modal" data-target="#staticBackdrop">
+                             Create a new post
+                            </button>
+                            </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-cog"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Setting</a>
+							<a class="dropdown-item" href="#">profile</a>
+							<a class="dropdown-item" href="#">Sign out</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="card-text border-2 border-right border-left border border-dark">
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary border-0 border bg-success border-succes text-white">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+	                                            <!-- SECOND NAV -->
+		<div class="d-flex justify-content-center w-100 mt-3">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+                    <a class="nav-link active" id="primera-vista-tab" data-toggle="pill" href="#primera-vista" role="tab" aria-controls="primera-vista" aria-selected="true">
+                        <i class="fas fa-square"></i>
+                    </a>
+				</li>
+				<li class="nav-item">
+                    <a class="nav-link" id="segunda-vista-tab" data-toggle="pill" href="#segunda-vista" role="tab" aria-controls="segunda-vista" aria-selected="true">
+                        <i class="fas fa-th"></i>
+                    </a>
+				</li>
+			</ul>
+		</div>
+	                    <!-- PUBLICACIONES -->
+	<div class="d-flex justify-content-center  tab-content " id="pills-tabContent">
+        <!-- primera vista -->
+		 <div class="tab-pane fade show active " id="primera-vista">
+            <!-- post individual -->
+			<div class="card mt-4 mb-4 border border-dark" style="width: 25rem;">
+				<div class="card-header">
+					Animal Lover <a class="text-rigth">04/07</a> 
+				</div>
+				<img class="imagenes" src="https://demascotas.info/wp-content/uploads/2018/01/dog-3098176_1280.jpg" class="card-img-top" alt="pets">
+				<div class="card-body">
+               <a>  
+                    <i class="far fa-heart"></i> 
+                    <i class="far fa-comment"></i> 
+                    <i class="far fa-paper-plane"></i> 
+                    <p> 
+                     <b>150 likes</b> 
+                    </p> 
+                </a>
+					<p class="card-text">
+                      Look to my beautiful dog its my everything.
+                    </p>
+				</div>
+			</div>
+            <div class="card mt-4 mb-4 border border-dark " style="width: 25rem;">
+				<div class="card-header mt-10">
+					Anime and Manga <Span>04/07</Span> 
+				 </div>
+				 <img class="imagenes" src="https://66.media.tumblr.com/tumblr_m9c91wP8zY1rehmufo1_400.jpg" class="card-img-top" alt="anime">
+				 <div class="card-body">
+                   <a> 
+                    <i class="far fa-heart"> </i>
+                    <i class="far fa-comment"></i> 
+                    <i class="far fa-paper-plane"></i> 
+                    <p> <b> 60 likes </b> </p> 
+                   </a>
+					<p class="card-text ">
+                    Watch Clannad is the saddest anime i ever seen in my life.
+                    </p>
+				</div>
+			</div>
+            <div class="card mt-4 mb-4 border border-dark" style="width: 25rem;">
+				<div class="card-header">
+					Food delicius <Span>04/07</Span> 
+				</div>
+				<img class="imagenes" src="https://data.whicdn.com/images/294966597/original.jpg" class="card-img-top" alt="food">
+				<div class="card-body">
+                <a> 
+                 <i class="far fa-heart"> </i> 
+                 <i class="far fa-comment"></i> 
+                 <i class="far fa-paper-plane"></i> 
+                 <p> <b> 250 likes </b> </p>
+                </a>
+					<p class="card-text"> I want, who want? yumm.</p>
+				</div>
+			</div>
+            <div class="card mt-4 mb-4 border border-dark" style="width: 25rem;">
+				<div class="card-header">
+					cute tree <Span>04/07</Span> 
+				</div>
+				<img class="imagenes" src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000997/img/basic/a0000997_main.jpg?20180320193934&q=80&rw=750&rh=536" class="card-img-top" alt="sakura tree">
+				<div class="card-body">
+                <a> 
+                     <i class="far fa-heart"></i>
+                     <i class="far fa-comment"></i> 
+                     <i class="far fa-paper-plane"></i> 
+                     <p> <b> 50 likes </b> </p>
+                </a>
+					<p class="card-text">I LOVE SAKURA TREE.</p>
+				</div>
+			</div>
+            <div class="card mt-4 mb-4 border border-dark" style="width: 25rem;">
+				<div class="card-header">
+				    Tatto  <Span>04/07</Span> 
+				</div>
+				<img class="imagenes" src="https://tattmag.com/wp-content/uploads/2019/11/kitsune-mask-tattoo-7.jpg" class="card-img-top" alt="tatto">
+			  <div class="card-body">
+                <a> 
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i> 
+                    <i class="far fa-paper-plane"></i> 
+                    <p><b> 180 likes </b> </p>
+                </a>
+					<p class="card-text">Thats a tatto i did the last month.</p>
+			   </div>
+			</div>
+            <div class="card mt-4 mb-4 border border-dark" style="width: 25rem;">
+				 <div class="card-header">
+					Japan things <Span>04/07</Span> 
+				 </div>
+				 <img class="imagenes" class="imagenes" src="https://66.media.tumblr.com/1d010f0c26a53c3f17be9fe71e6977e8/tumblr_oumm5sIwrV1snegd3o1_400.jpg" class="card-img-top" alt="Japan">
+				 <div class="card-body">
+                 <a> 
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-paper-plane"> </i>
+                    <p> <b> 90 likes </b> </p>
+                 </a>
+					<p class="card-text">Japan is a magic place.</p>
+				 </div>
+			 </div>
+		   </div>
+        
+                                 <!-- SEGUNDA VISTA -->
+        <div class="tab-pane fade" id="segunda-vista">
+             <div class="card-group">
+                 <div class="card border-0" style="width: 25rem;">
+                     <img class="imagen" src="https://demascotas.info/wp-content/uploads/2018/01/dog-3098176_1280.jpg" class="card-img-top" alt="...">
+                 </div>
+                 <div class="card border-0" style="width: 25rem;">
+                     <img class="imagen" src="https://66.media.tumblr.com/tumblr_m9c91wP8zY1rehmufo1_400.jpg" class="card-img-top" alt="...">
+                 </div>
+                 <div class="card border-0" style="width: 25rem;">
+                     <img class="imagen" src="https://data.whicdn.com/images/294966597/original.jpg" class="card-img-top" alt="...">
+                 </div>
+             </div>
+             <div class="card-group">
+                 <div class="card-group">
+                    <div class="card border-0" style="width: 25rem;">
+                     <img class="imagen" src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000997/img/basic/a0000997_main.jpg?20180320193934&q=80&rw=750&rh=536" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card border-0" style="width: 25rem;">
+                     <img class="imagen" src="https://tattmag.com/wp-content/uploads/2019/11/kitsune-mask-tattoo-7.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card border-0" style="width: 25rem;">
+                        <img class="imagen" src="https://66.media.tumblr.com/1d010f0c26a53c3f17be9fe71e6977e8/tumblr_oumm5sIwrV1snegd3o1_400.jpg" class="card-img-top" alt="...">
+                    </div>
+                 </div>
+            </div>
+	    </div>
+        </div>
+        
+	<!-- No tocar -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+</body></html>
+	<!-- No tocar -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+    
+</body>
+</html>
